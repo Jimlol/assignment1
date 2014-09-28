@@ -65,12 +65,23 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About me.html" />
+    <Content Include="Contact Me.html" />
     <Content Include="css\foundation.css" />
     <Content Include="css\foundation.min.css" />
     <Content Include="css\main.css" />
     <Content Include="css\normalize.css" />
     <Content Include="css\reset.css" />
+    <Content Include="Github.html" />
     <Content Include="humans.txt" />
+    <Content Include="img\521px-JIM_logo.svg.png" />
+    <Content Include="img\barrie.jpg" />
+    <Content Include="img\download.jpg" />
+    <Content Include="img\dragon.jpg" />
+    <Content Include="img\iron-man.jpg" />
+    <Content Include="img\ironman.jpg" />
+    <Content Include="img\myself.jpg" />
+    <Content Include="img\wangwang.jpg" />
     <Content Include="index.html" />
     <Content Include="js\foundation.min.js" />
     <Content Include="js\foundation\foundation.abide.js" />
@@ -90,21 +101,23 @@
     <Content Include="js\foundation\foundation.tab.js" />
     <Content Include="js\foundation\foundation.tooltip.js" />
     <Content Include="js\foundation\foundation.topbar.js" />
+    <Content Include="js\jquery-2.1.1.min.js" />
+    <Content Include="js\jquery.cycle.all.js" />
     <Content Include="js\main.js" />
     <Content Include="js\vendor\fastclick.js" />
     <Content Include="js\vendor\jquery.cookie.js" />
     <Content Include="js\vendor\jquery.js" />
     <Content Include="js\vendor\modernizr.js" />
     <Content Include="js\vendor\placeholder.js" />
+    <Content Include="Projects.html" />
     <Content Include="robots.txt" />
+    <Content Include="Services.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="img\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

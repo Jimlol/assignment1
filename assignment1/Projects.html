@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to my portfolio</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/foundation.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <style type="text/css">
+        #awesome-show {
+            width: 1100px;
+            height: 700px;
+            display: block;
+            position: relative;
+            margin: auto;
+        }
+
+        #slider {
+            width: 1100px;
+            height: 700px;
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .info {
+            width: 1600px;
+            height: 100px;
+            display: block;
+            position: inherit;
+            z-index: 99;
+            bottom: 100px;
+            overflow: auto;
+        }
+
+            .info h2 {
+                font-family: sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                color: #FFF;
+                padding: 15px 0 0 20px;
+            }
+
+            .info p {
+                font-family: sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                color: #FFF;
+                padding: 0 0 0 20px;
+                line-height: 1px;
+            }
+
+        #play {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            display: block;
+            position: absolute;
+            background: fixed;
+            top: 0;
+            right: 48px;
+            color: #FFF;
+            cursor: pointer;
+            z-index: 999;
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+        }
+
+        #pause {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            display: block;
+            position: absolute;
+            background: fixed;
+            top: 0;
+            right: 84px;
+            color: #FFF;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        #next {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            display: block;
+            position: absolute;
+            background: fixed;
+            top: 0;
+            right: 0;
+            color: #FFF;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        #prev {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            display: block;
+            position: absolute;
+            background: fixed;
+            top: 0;
+            right: 133px;
+            color: #FFF;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        #pager {
+            width: 100%;
+            text-align: center;
+            display: block;
+            position: absolute;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+            #pager a {
+                font-size: .0em;
+                color: transparent;
+                width: 10px;
+                height: 10px;
+                display: inline-block;
+                position: relative;
+                border: 1px solid #FFF;
+                border-radius: 20px;
+                background: transparent;
+                margin: 10px;
+            }
+
+                #pager a.activeSlide {
+                    background: #FFF;
+                }
+
+        #navigationBar {
+            background: #ffd800;
+        }
+
+            #navigationBar ul {
+                font-family: sans-serif;
+                font-size: medium;
+                margin: auto;
+            }
+
+                #navigationBar ul li a {
+                    text-decoration: none;
+                    float: left;
+                    display: block;
+                    padding: 10px 20px;
+                    color: black;
+                    font-family: sans-serif;
+                    font-size: medium;
+                }
+
+                    #navigationBar ul li a:hover {
+                        color: white;
+                    }
+
+        .sidebar-box {
+            max-height: 120px;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .sidebar-box .read-more {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                margin: 0;
+                padding: 30px 0;
+                background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, transparent),color-stop(1, black));
+                background-image: -webkit-linear-gradient(top, transparent, black);
+                background-image: -moz-linear-gradient(top, transparent, black);
+                background-image: -ms-linear-gradient(top, transparent, black);
+                background-image: -o-linear-gradient(top, transparent, black);
+            }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="headerContent">
+            <a href="index.html">
+                <img src="img/521px-JIM_logo.svg.png" alt="logo" title="logo" />
+            </a>
+        </div>
+    </div>
+    <div class="row" id="navigationBar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About me.html">About Me</a></li>
+            <li><a href="Github.html">Projects</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Projects.html">GitHub</a></li>
+            <li><a href="Contact Me.html">Contact Me</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <header class="small-12 small-centered columns">
+            <h1>Welcome to my portfolio</h1>
+        </header>
+    </div><!--End Header-->
+    <div class="row" id="introduction">
+        <article class="small-8 columns">
+            <h2>Introduction Myself</h2>
+            <p>
+                Hello, everyone
+                My name is Jingjun Han. I come from China. I have been here to study for 3 years. I am learning computer programming right now. I have taken EAP english course before
+                I started my programming in Georgian college. As you can see, my English skill is not very well, but I am still keep doing on the english programm. When I finished my EAP
+                courses, I started to learn computer programming. Well, I am not a good programmer. For the computer programming, I know nothing about that before. I have nothing knowledge
+                about java, c#, java script, and so on. I am brand new about it. So there is my first time on that, and another bad point is that I learned it in English. For me, that is
+                really bad, because I can promise I can do that really successfully if I learn it in Chinese. Therefore, I must spend a lot of time on the English and computer programming. Through the
+                a period of time to study, my computer skill and english skill got a little bit of improvement. However, I still need to keep doing on it to get more computer skills. This semester
+                , I am leanring the course which is advanced web programming. Javascript and jQuery for me is very new. I have never learned that before, therefore, I am not really good at it. But,
+                the best thing is that you give us Youtube list to review that in our home. That is super awesome, espically for our kind of international student, I need to see that 2 times one day at least.
+                I like this very much. Thank you. I will do my best on this course.
+            </p>
+            <p class="read-more"><a href="#" class="button">READ MORE</a></p>
+
+        </article>
+    </div><!--End introduction here-->
+    <div id="awesome-show">
+        <div id="pager"></div>
+        <div id="pause">&asymp;</div>
+        <div id="play">&Delta;</div>
+        <div id="next">&rang;</div>
+        <div id="prev">&lang;</div>
+        <div id="slider">
+            <div class="item">
+                <img src="img/barrie.jpg" />
+                <div class="info">
+                    <h2>Barrie</h2>
+                    <p>This is my first view of Barrie.</p>
+                </div><!--End info-->
+            </div><!--End Items1-->
+
+            <div class="item">
+                <img src="img/dragon.jpg" />
+                <div class="info">
+                    <h2>World of Warcraft</h2>
+                    <p>This is my favourite game in the world. I have been played wow for 7 years.</p>
+                </div><!--End info-->
+            </div><!--End Items2-->
+
+            <div class="item">
+                <img src="img/iron-man.jpg" />
+                <div class="info">
+                    <h2>IRON MAN</h2>
+                    <p>This is my super hero! IRON MAN</p>
+                </div><!--End info-->
+            </div><!--End Items3-->
+
+        </div><!--End slider-->
+    </div><!--End Awesome Show-->
+    <div class="row">
+        <footer class="large-6 columns">JIM @COPYRIGHT SEP, 28, 2014</footer>
+    </div>
+    <!-- Javascript Section -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+    <script type="text/javascript">
+
+        $('#slider').cycle({
+            fx: 'scrollHorz',
+            next: '#next',
+            prev: '#prev',
+            pager: '#pager',
+            timeout: 3000,
+            speed: 900,
+            pause: 1
+        });
+
+    </script>
+
+</body>
+</html>
